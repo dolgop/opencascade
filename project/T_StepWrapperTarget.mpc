@@ -1,0 +1,112 @@
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+// Модуль: "w:/CAD/project/T_StepWrapperTarget.mpc"
+// mpc/mwc файлы проектов (mpc/mwc)
+// Generated from UML model, root element: <<AdapterTarget::Category>> CAD::StepWrapperTarget
+//
+//
+// Все права принадлежат ООО НПП "Гарант-Сервис".
+//
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+project (T_StepWrapperTarget) : project_generic_core, project_subsystem_windows {
+	sharedname = StepWrapperTarget
+	after += Core
+	libs  += Core
+	
+
+	after += StepWrapper
+	after += StepWrapper_tie
+	libs  += StepWrapper
+	libs  += StepWrapper_tie
+
+	//#UC START# *489BF27801D2_CUSTOM_DEPENDENSES*
+	lit_libs += FWOSPlugin
+	lit_libs += PTKernel
+	lit_libs += TKAdvTools
+	lit_libs += TKBin
+	lit_libs += TKBinL
+	lit_libs += TKBinTObj
+	lit_libs += TKBinXCAF
+	lit_libs += TKBO
+	lit_libs += TKBool
+	lit_libs += TKBRep
+	lit_libs += TKCAF
+	lit_libs += TKCDF
+	lit_libs += TKernel
+	lit_libs += TKFeat
+	lit_libs += TKFillet
+	lit_libs += TKG2d
+	lit_libs += TKG3d
+	lit_libs += TKGeomAlgo
+	lit_libs += TKGeomBase
+	lit_libs += TKHLR
+	lit_libs += TKIGES
+	lit_libs += TKLCAF
+	lit_libs += TKMath
+	lit_libs += TKMesh
+	lit_libs += TKMeshVS
+	lit_libs += TKNIS
+	lit_libs += TKOffset
+	lit_libs += TKPCAF
+	lit_libs += TKPLCAF
+	lit_libs += TKPrim
+	lit_libs += TKPShape
+	lit_libs += TKService
+	lit_libs += TKShapeSchema
+	lit_libs += TKShHealing
+	lit_libs += TKStdLSchema
+	lit_libs += TKStdSchema
+	lit_libs += TKSTEP
+	lit_libs += TKSTEP209
+	lit_libs += TKSTEPAttr
+	lit_libs += TKSTEPBase
+	lit_libs += TKSTL
+	lit_libs += TKTObj
+	lit_libs += TKTopAlgo
+	lit_libs += TKV2d
+	lit_libs += TKV3d
+	lit_libs += TKVoxel
+	lit_libs += TKVRML
+	lit_libs += TKXCAF
+	lit_libs += TKXCAFSchema
+	lit_libs += TKXDEIGES
+	lit_libs += TKXDESTEP
+	lit_libs += TKXMesh
+	lit_libs += TKXml
+	lit_libs += TKXmlL
+	lit_libs += TKXmlTObj
+	lit_libs += TKXmlXCAF
+	lit_libs += TKXSBase
+
+	libpaths += C:/OpenCASCADE651/ros/win32/vc9/bin
+	libpaths += C:/OpenCASCADE651/ros/win32/vc9/lib 
+
+	includes += C:/OpenCASCADE651/ros/inc
+
+	macros += WNT
+	//#UC END# *489BF27801D2_CUSTOM_DEPENDENSES*
+	includes += ../..
+
+	Header_Files {
+		Std_Headers {
+			./../StepWrapperTarget/StepWrapperTarget.h
+			./../StepWrapperTarget/StepWrapperTarget_tie.h
+		}
+	}
+
+	Source_Files {
+		Std_Sources {
+			./../StepWrapperTarget/StepWrapperTarget.cpp
+			./../StepWrapperTarget/StepWrapperTarget_tie.cpp
+		}
+	}
+	
+	Resource_Files {
+		./../StepWrapperTarget/StepWrapperTarget_vi.rc
+		./../StepWrapperTarget/StepWrapperTarget_vi.rch
+		
+		//#UC START# *489BF27801D2_RESOURCE_FILES*
+		//#UC END# *489BF27801D2_RESOURCE_FILES*
+	}
+}
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

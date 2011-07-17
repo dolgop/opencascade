@@ -1,0 +1,50 @@
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+// Модуль: "w:/CAD/project/StepWrapper_tie.mpc"
+// MPC для TIE-обвязки (.mpc)
+// Generated from UML model, root element: <<Library::Category>> CAD::StepWrapper
+//
+//
+// Все права принадлежат ООО НПП "Гарант-Сервис".
+//
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+project (StepWrapper_tie) : project_generic_core {
+	sharedname = StepWrapper_tie
+	staticname = StepWrapper_tie
+	
+	includes += ../..
+	includes += C:/OpenCASCADE651/ros/inc
+	
+	macros += WNT
+
+	after += StepWrapper
+	libs  += StepWrapper
+	
+	Header_Files {
+		Std_Headers {
+		}
+	
+		Step {
+			./../StepWrapper/Step/Step_tie.h
+		}
+	
+		Step_i {
+		}
+	
+	}
+
+	Source_Files {
+		Std_Sources {				
+		}
+	
+		Step {
+			./../StepWrapper/Step/Step_tie.cpp
+		}
+	
+		Step_i {
+		}
+	
+	}
+
+}
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

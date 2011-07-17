@@ -1,0 +1,32 @@
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+// Модуль: "w:/CAD/project/CAD.mwc"
+// mpc/mwc файлы проектов (mpc/mwc)
+// Generated from UML model, root element: <<Project::Category>> CAD
+//
+//
+// Все права принадлежат ООО НПП "Гарант-Сервис".
+//
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+workspace (CAD) {
+	static_projects {
+		cmdline += -ti lib:msvc90-lib-generic-static
+		cmdline += -static
+		
+		w:/CAD/project/StepWrapper.mpc
+		w:/CAD/project/StepWrapper_tie.mpc
+		
+		w:/shared/project/Core.mpc
+		
+	}
+	dll_target_stepwrappertarget {
+		cmdline += -ti dll:msvc90-dll-generic-static
+		//#UC START# *489BF27801D2_DLL_TARGET*
+		//#UC END# *489BF27801D2_DLL_TARGET*
+		w:/CAD/project/T_StepWrapperTarget.mpc
+	
+	}
+	
+}
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

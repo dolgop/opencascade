@@ -1,0 +1,85 @@
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+// Модуль: "w:/CAD/project/StepWrapper.mpc"
+// mpc/mwc файлы проектов (mpc/mwc)
+// Generated from UML model, root element: <<Library::Category>> CAD::StepWrapper
+//
+//
+// Все права принадлежат ООО НПП "Гарант-Сервис".
+//
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+project (StepWrapper) : project_generic_core {
+	sharedname = StepWrapper
+	staticname = StepWrapper
+
+	includes += ../..
+	includes += C:/OpenCASCADE651/ros/inc
+
+	macros += WNT
+
+	Header_Files {
+		Std_Headers {
+			./../StepWrapper/LibHome.h
+		}
+	
+		Step {
+			./../StepWrapper/Step/Step.h
+			./../StepWrapper/Step/StepFactories.h
+		}
+	
+		Step_i {
+			./../StepWrapper/impl/Step_i/Face_i.h
+			./../StepWrapper/impl/Step_i/Face_i_factory.h
+			./../StepWrapper/impl/Step_i/Location_i.h
+			./../StepWrapper/impl/Step_i/Location_i_factory.h
+			./../StepWrapper/impl/Step_i/NameWrapper_i.h
+			./../StepWrapper/impl/Step_i/NameWrapper_i_factory.h
+			./../StepWrapper/impl/Step_i/Shape_i.h
+			./../StepWrapper/impl/Step_i/Shape_i_factory.h
+			./../StepWrapper/impl/Step_i/StepManager_i.h
+			./../StepWrapper/impl/Step_i/StepManager_i_factory.h
+		}
+	}
+
+	Inline_Files {
+		Std_Inlines {
+		}
+	
+		External {
+		}
+	
+		Step {
+		}
+	
+		Step_i {
+		}
+	}
+
+	Source_Files {
+		Std_Sources {
+			./../StepWrapper/LibHome.cpp
+		}
+	
+		External {
+		}
+	
+		Step {
+			./../StepWrapper/Step/Step.cpp
+			./../StepWrapper/Step/StepFactories.cpp
+		}
+	
+		Step_i {
+			./../StepWrapper/impl/Step_i/Face_i.cpp
+			./../StepWrapper/impl/Step_i/Face_i_factory.cpp
+			./../StepWrapper/impl/Step_i/Location_i.cpp
+			./../StepWrapper/impl/Step_i/Location_i_factory.cpp
+			./../StepWrapper/impl/Step_i/NameWrapper_i.cpp
+			./../StepWrapper/impl/Step_i/NameWrapper_i_factory.cpp
+			./../StepWrapper/impl/Step_i/Shape_i.cpp
+			./../StepWrapper/impl/Step_i/Shape_i_factory.cpp
+			./../StepWrapper/impl/Step_i/StepManager_i.cpp
+			./../StepWrapper/impl/Step_i/StepManager_i_factory.cpp
+		}
+	}
+}
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
